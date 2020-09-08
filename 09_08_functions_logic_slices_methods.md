@@ -80,7 +80,7 @@ def verify_age(age):
     if age > 120:
         print('You are dead.')
         return False
-    elif >= 18:
+    elif age >= 18:
         print('Legally, you are an adult!')
         return True
     else:
