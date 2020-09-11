@@ -18,6 +18,7 @@ should appear, those specifications should be followed.
 
 ### Readability (30%)
 
+Code follows PEP8 guidelines (use a linter, such as `pylint` or `flake8`).
 Variables and functions should have meaningful names. Code should be organized
 into functions/methods where appropriate (rather than long passages of ad hoc
 code).
