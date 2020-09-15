@@ -172,7 +172,7 @@ have to write.
 8)  `baaa`, `baaaa`, ..., `baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa` (ad infinitum) but not `baa`.
 9)  a more concise regex than `(make|makes|male|males|mate|mates)`
 10) two words next to each other with the same final letter
-    * Hint: Use parentheses to capture and then "\1" to match the previously caught match.)
+    * Hint: Use parentheses to capture and then `\1` to match the previously caught match.
 11) modify the previous regex to not consume the second word (so that it's available for another search)
     * Hint: Use positive lookahead, that is, `(?=...)`
 12) The bracketed portion of "Thi{s is a first example s}entence."
