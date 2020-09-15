@@ -154,33 +154,34 @@ for regular expressions (so to match a backslash, you need two backslashes), so
 you should generally always use raw strings to limit how many backslashes you
 have to write.
 
-| --- | --- | --- |
 | actual | string literal | raw string literal |
 | --- | --- | --- |
-| `\` | `'\\'` | N/A (ends with backslash) |
+| `\` | `'\\'` | N/A (would end with unescaped backslash `r'\'`) |
 | `\b` | `'\\b'` | `r'\b'` |
 | `\\` | `'\\\\'` | `r'\\'` |
 
 ## Regular expression practice
 
-1)  a string with "ed" at the end
-2)  a word with "ed" at the end
-3)  a word with "anti" at the beginning
-4)  both the American and British spellings of "labour/labor"
-5)  'Jack', 'Mack', 'Pack'
-6)  both the American and British spellings of "center/centre"
-7)  an eight-letter word with 'j' as the third letter and 't' as the sixth letter
-8)  words other than "best" that end in "est"
-9)  a more concise regex than "(make|makes|made)"
+1)  a string with `ed` at the end
+2)  a word with `ed` at the end
+3)  a word with `anti` at the beginning
+4)  both the American and British spellings of `labour/labor`
+5)  `Jack`, `Mack`, or `Pack`
+6)  both the American and British spellings of `center/centre`
+7)  an eight-letter word with `j` as the third letter and `t` as the sixth letter
+8)  `baaa`, `baaaa`, ..., `baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa` (ad infinitum) but not `baa`.
+9)  a more concise regex than `(make|makes|male|males|mate|mates)`
 10) two words next to each other with the same final letter
-    * `Hint`: Use parentheses to capture and then "\1" to match the previously caught match.)
+    * Hint: Use parentheses to capture and then "\1" to match the previously caught match.)
 11) modify the previous regex to not consume the second word (so that it's available for another search)
-    * `Hint`: Use positive lookahead, that is, "(?=...)"
+    * Hint: Use positive lookahead, that is, `(?=...)`
 12) The bracketed portion of "Thi{s is a first example s}entence."
-    * `Hint`: Use greedy matching.
+    * Hint: Use greedy matching.
 13) The bracketed portions of "Thi{s is} a fir{st example s}entence."
-    * `Hint`: Use lazy/non-greedy matching.
+    * Hint: Use lazy/non-greedy matching.
 14) Words that begin with "t" regardless of case, that is, "T" and "t", in the following sentence: "The deal is that I make dinner every night, but Juanito made it last night."
-    * `Hint1`: Look up the "re.IGNORECASE" parameter of the re.findall() function.
-    * `Hint2`: "re.IGNORECASE" has an abbreviation of "re.I".
-    * `Hint3`: You may need to escape the word boundary character "\b" with an additional backslash, that is, "\\b".
+    * Hint1: Look up the `re.IGNORECASE` parameter of the re.findall() function.
+    * Hint2: `re.IGNORECASE` has an abbreviation of `re.I`.
+    * Hint3: You may need to escape the word boundary character "\b" with an additional backslash, that is, "\\b".
+15) Words that begin and end with the same letter.
+    * Hint: Use `re.IGNORECASE/re.I`.
