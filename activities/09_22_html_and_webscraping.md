@@ -87,7 +87,6 @@ execute faster that HTML parsers.
 
 * `View Source`
 * In Chrome go to `View | Developer > | Developer Tools`
-# List comprehensions, regular expressions, and web scraping
 
 ### Using regex to pseudo-parse HTML
 
@@ -143,10 +142,11 @@ ethical, this is how you can spoof a browser user-agent.
 
 ### Query strings
 
-When you type in `spam` on google.com and hit [return], it pulls up a new
-page with a url like this:
+When you type in `spam` on google.com and hit [return], it pulls up a new page
+with a url like this:
 https://www.google.com/search?q=spam&oq=spam&aqs=chrome..69i57j0l5.3641j0j8&sourceid=chrome&ie=UTF-8
 Everything after the `?` is query strings with the following key/value pairs
+separated by ampersands (`&`).
 
 ```
 q         spam
