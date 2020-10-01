@@ -16,40 +16,125 @@ so far.
 
 ## Builtin functions and objects
 
+### Math functions
+
+* `abs`
+* `max`/`min`
+* `round`
+* `sum`
+
+##### Less important math functions
+
+* `bin`
+* `complex`
+* `divmod`
+* `hex`
+* `oct`
+* `ord`
+* `pow`
+
+### Logic functions
+
+* `all`
+* `any`
+
+### Classes (types)
+
+* `bool`
 * `dict`
-* `dir`
 * `float`
-* `help`
-* `input`
 * `int`
-* `len`
 * `list`
-* `max`
-* `min`
+* `set`
+* `str`
+* `tuple`
+
+##### Less important classes
+
+* `bytearray`
+* `bytes`
+* `frozenset`
+* `object`
+
+### Miscellaneous
+
+* `chr`
+* `dir`
+* `enumerate`
+* `exit`/`quit`
+* `hash`
+* `help`
+* `id`
+* `input`
+* `isinstance`
+* `len`
 * `open`
 * `print`
 * `range`
 * `reversed`
-* `round`
 * `sorted`
-* `str`
-* `sum`
-* `tuple`
 * `type`
 * `zip`
 
-## Reserved keywords (https://www.programiz.com/python-programming/keyword-list)
+##### Less important miscellaneous
 
-* True/False
-* None
-* and/or/not
-* (from X )import Y( as Z)
-* if/elif/else
-* for/while
-* continue
-* is
-* in
-* pass
+* `ascii`
+* `callable`
+* `classmethod`/`staticmethod`/`property` method decorators
+* `compile`
+* `delattr`/`getattr`/`hasattr`/`setattr`
+* `eval`/`exec`
+* `filter`
+* `format`
+* `globals`/`locals`
+* `issubclass`
+* `iter`
+* `map`
+* `memoryview`
+* `next`
+* `repr`
+* `slice`
+* `super`
+* `vars`
+
+## Reserved keywords 
+
+The complete list of
+[keywords](https://docs.python.org/3/reference/lexical_analysis.html#keywords)
+can be found using the following code.  Examples of each keyword can be found
+[here](https://www.programiz.com/python-programming/keyword-list).
+
+```python
+import keyword
+print(keyword.kwlist)
+```
+
+* `def`/`return`
+* `del`
+* `and`/`or`/`not`
+* `if`/`elif`/`else`
+* (`from` X )`import` Y( `as` Z)
+* `for`/`while`/`continue`/`break`
+* `in`
+* `is`
+* `None`
+* `pass`
+* `True`/`False`
+* `with`/`as`
+
+##### Less important keywords (we'll learn a few of these later)
+
+Do not worry about the following keywords that are generally more advanced.
+
+* `assert`
+* `async`/`await`
+* `class`
+* `lambda`
+* `global`
+* `nonlocal`
+* `raise`
+* `try`/`except`/`finally`
+* `yield`
 
 ## Terms to know:
 
@@ -63,4 +148,3 @@ so far.
 * Variable
 * Value
 * Regular expression
-* File
