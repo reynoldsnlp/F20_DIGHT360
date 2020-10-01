@@ -18,20 +18,19 @@ so far.
 
 ### Math functions
 
-* `abs`
+* `abs` (absolute value)
 * `max`/`min`
 * `round`
 * `sum`
 
 ##### Less important math functions
 
-* `bin`
-* `complex`
-* `divmod`
-* `hex`
-* `oct`
-* `ord`
-* `pow`
+* `bin` (binary representation of integer)
+* `divmod` (division: returns (solution, remainder) tuple)
+* `hex` (hexadecimal representation of integer)
+* `oct` (octal representation of integer)
+* `ord` (unicode codepoint of 1-character string)
+* `pow` (same as `x ** y`, with some other bells and whistles)
 
 ### Logic functions
 
@@ -52,9 +51,10 @@ so far.
 ##### Less important classes
 
 * `bytearray`
-* `bytes`
-* `frozenset`
-* `object`
+* `bytes` (like `str`, but pure bytes without assuming an encoding (unicode))
+* `complex` (complex number, i.e. real and imaginary)
+* `frozenset` (immutable set)
+* `object` (class from which all other classes are inherited)
 
 ### Miscellaneous
 
@@ -148,3 +148,26 @@ Do not worry about the following keywords that are generally more advanced.
 * Variable
 * Value
 * Regular expression
+
+
+## Example questions
+
+On the quiz, most of the questions simply ask you to describe as precisely as
+possible what snippets of python code are doing. For example, given the
+following snippet...
+
+```python
+import re
+
+poem = 'I think that I shall never see a poem lovely as a tree.'
+matches = re.findall(r'\bs\w+', poem)
+print(matches)
+```
+
+...the following response would receive full credit:
+
+> This snippet imports the `re` module, then declares a string under the name
+> `poem`, then calls the `findall` function from the `re` module to find every
+> word that begins with an `s` (shall and see). This list is assigned to the
+> name `matches`. Finally, the list is printed to `stdout`.
+
