@@ -71,7 +71,7 @@ import re
 # open a previously saved HTML file and soupify it
 # BeautifulSoup can take a str or a file object as its first argument
 with open('Healthcare_in_Canada-wikipedia.html') as healthy_file:
-    soup = BeautifulSoup(healthy_file, 'html5lib')  # html5lib is the parser
+    soup = BeautifulSoup(healthy_file, 'html.parser')
 ```
 
 Let's find all the headers with \<h2\> tags in this article.
@@ -84,7 +84,7 @@ Let's extract all of the links on this page.
 
 ```python
 for a in soup.find_all('a'):
-    print(a['href'])
+    print(a.get('href'))
 ```
 
 Let's find all the \<span\> tags in this article with `id=Public_opinion`.
