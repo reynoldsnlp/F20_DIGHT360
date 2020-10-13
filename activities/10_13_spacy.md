@@ -2,6 +2,9 @@
 
 ## Installation: 
 
+See https://spacy.io/usage#quickstart, which will recommend something like the
+following.
+
 ```bash
 $ python3 -m pip install --user spacy
 $ python3 -m spacy download en
@@ -17,7 +20,7 @@ import spacy
 from spacy import displacy
 
 # Load English tokenizer, tagger, parser, NER and word vectors...
-nlp = spacy.load('en')  # this is the all-purpose analyzer
+nlp = spacy.load('en')  # use the same name from `spacy download` above
 print('nlp:', type(nlp), dir(nlp))
 ```
 

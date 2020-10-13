@@ -19,10 +19,10 @@ def get_reynoldsnlp(filename):
     # time.sleep(1)
     print('Requesting {}....'.format(filename), file=sys.stderr)
     headers = {'user-agent': 'Robert Reynolds (robert_reynolds@byu.edu)'}
-    req = requests.get('http://reynoldsnlp.com/scrape/' + filename,
-                       headers=headers)
+    response = requests.get('http://reynoldsnlp.com/scrape/' + filename,
+                            headers=headers)
     with open('scrape/' + filename, 'w') as html_file:
-        html_file.write(req.text)
+        html_file.write(response.text)
 
 
 def get_hrefs(filename):

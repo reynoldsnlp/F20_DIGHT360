@@ -5,15 +5,14 @@ import re
 import requests
 
 
-# get content from website
 peanut_butter_url = 'https://www.today.com/food/best-peanut-butters-according-nutritionists-chefs-t145189'
 h = {'user-agent': 'Devon Su (devonleoc@gmail.com)'}
 response = requests.get(peanut_butter_url, headers=h)
-the_response = response.text
+html_src = response.text
 
 # write html source to peanut_butter.html
 with open('peanut_butter.html', 'w') as html_file:
-    print(the_response, file=html_file)
+    print(html_src, file=html_file)
 
 # read peanut_butter.html as a string
 with open('peanut_butter.html', 'r') as html_file:
