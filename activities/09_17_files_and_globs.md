@@ -23,7 +23,7 @@ print('done!')
 
 ## Reading and writing files
 
-Working with files in python requires understanding that there arethree
+Working with files in python requires understanding that there are three
 distinct entities:
 
 1. The file itself, as stored in the operating system's filesystem
@@ -40,7 +40,6 @@ joke_file = open('jokes.txt', 'r')  # 'r' = read mode
 # read mode is default, so you can just write open('jokes.txt')
 for line in joke_file:  # file objects are iterable (you can use a for loop on them)
     print(line)
-print()
 joke_file.close()
 ```
 
@@ -54,7 +53,7 @@ error in the middle of the block). The following idiom is highly preferred:
 with open('jokes.txt') as joke_file:  # name the file object joke_file
     for line in joke_file:
         print(line)
-    print()
+# joke_file.close() called automatically because the `with` code block ends
 ````
 
 You can also read an entire file all at once. Note that in read mode, python
