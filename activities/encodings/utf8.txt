@@ -1,0 +1,6 @@
+Arabic:هذا هو مثالي.:cp1256
+English:This is my example.:ascii
+Japanese:これは私の例です。:iso2022_jp
+Korean:이것은 나의 본보기이다.:euckr
+Russian:Это - мой пример.:cp1251
+Thai:นี่คือตัวอย่างของฉัน:cp874
