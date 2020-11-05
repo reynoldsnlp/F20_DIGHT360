@@ -9,6 +9,7 @@ following idiom instead of `plt.show()`:
 ```python
 >>> fig = plt.gcf()  # get current figure
 >>> fig.savefig('filename.png')
+>>> plt.clf()  # clear plot (only necessary if you need to make more images)
 ```
 
 The following code is adapted from this website:
