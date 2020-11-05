@@ -126,6 +126,8 @@ print(c.most_common())
 ...
 ```
 
+You can use `plt.xticks(fontsize=10, rotation='vertical')
+
 ## drawing barplot, scatterplot, and boxplots
 
 ```python
