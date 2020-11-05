@@ -12,6 +12,7 @@ does not need to be in English! Here are some possibilities to consider:
 * Wikipedia (dumps can be downloaded)
 * Games
 * Recipes
+* Anything on the Linguistic Data Consortium
 
 ## Analysis methods
 
