@@ -18,6 +18,10 @@ Download driver:
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
+# if chromedriver is not in your PATH, put the absolute path to it as an
+# argument to Chrome()
+# driver = webdriver.Chrome('/path/to/my/chromedriver')  # MacOS/Linux
+# driver = webdriver.Chrome(r'C:\path\to\my\chromedriver')  # Windows
 driver = webdriver.Chrome()
 driver.get("http://www.python.org")  # does not necessarily wait for AJAX
 assert "Python" in driver.title
