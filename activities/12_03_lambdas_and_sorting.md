@@ -52,8 +52,6 @@ sorted(names, reverse=True)
 # [('Wesley', 11), ('Rob', 39), ('Rachael', 40), ('Mark', 8), ('Hyrum', 15), ('Eliza', 13)]
 ```
 
-print('Sorting "keys" are not the same kind of key as in dict key-value pairs.')
-
 `sorted` sorts by using `>` and `<` operators. By default it compares the
 entire elements. Tuples (and really all sequences) are compared by their first
 item first, and subsequent items if needed.
@@ -78,5 +76,5 @@ are "single-use" or "disposable" functions.
 > PRACTICE B:
 
 Sort `names` by...
-    * the second letter of the name
-    * the last letter of the name
+  * the second letter of the name
+  * the last letter of the name
