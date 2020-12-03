@@ -17,8 +17,6 @@ word_count = 10
 nlp = spacy.load('en')  # your model name may be different
 
 
-# ids = list('ABC')
-# doc_complete = ['the quick test', 'the slow trial', 'a trial by jury']
 ids = []
 doc_complete = []
 for filename in glob('gc_texts/*.html'):
